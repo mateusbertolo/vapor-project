@@ -11,6 +11,7 @@ $adiministrador = $_SESSION['adiministrador'];
     <link rel="stylesheet" href="./assets/global.css">
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="./assets/styles.css">
+    <script src="./assets/script.js"></script>
     <title>Vapor - dasboard</title>
     <div id="header-container">
         <div>Olá, <?php echo"{$adiministrador['nome']}"?></div>

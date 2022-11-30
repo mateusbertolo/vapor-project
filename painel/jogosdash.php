@@ -32,7 +32,7 @@
                     <td class="center"><a href="editar-idiomas-jogo.php?id=<?=$linhasjogo['id']?>"> Idioma</a></td>
                     <td class="center"><a href="editar-plataforma-jogo.php?id=<?=$linhasjogo['id']?>"> Plataforma</a></td>
                     <td class="center"><a href="editar-jogo.php?id=<?=$linhasjogo['id']?>"> Editar</a></td>
-                    <td class="center"><a href="excluir-jogo.php?id=<?=$linhasjogo['id']?>"> Excluir</a></td>
+                    <td class="center"><a onclick="excluirjogo(<?=$linhasjogo['id']?>)" href="#"> Excluir</a></td>
                 </tr> 
                 <?php }  ?>
             </table>   
