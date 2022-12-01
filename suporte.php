@@ -4,7 +4,7 @@
     $sucesso = $_GET['certo'] ?? null;
 
 ?>
-
+    
 <!DOCTYPE html>
 <html lang="pt-BR">
     <?php require('./modulos/top-menu.php') ?>
@@ -12,12 +12,12 @@
         <div id="body-container">
             <?php require('./modulos/side-menu.php') ?>
             <div id="areaform">
-                <form action="./painel/nova-mensagem.php" method="POST">
+                <form  action="nova-mensagem.php" method="POST" >
                         <div id= "imagem-suporte">
                             <img src="./public/images/logo.png" alt="vapor"> 
                         </div>
                             <div class="texto-logo-suporte">VAPOR</div>
-                            <div id="arealogin3">
+                            <div id="arealogin3" onclick ="removeCorrectMensage()">
                                 <div class="labelnome">
                                     <input placeholder="Nome" type="text" required name="nome" id="nome">
                                 </div> <br>
@@ -46,13 +46,13 @@
                                         <option value="" disabled selected>Selecione</option>
                                 </div> <br> -->
                                 
-                                <button class="button-login">Enviar</button>
-
+                                <button class="button-login">Enviar</button> 
+                              
                 </form>
-                                <?php if($sucesso != null) { ?>
-                                    <div id="certo"><?=$sucesso?></div>
+                        <?php if($sucesso != null) { ?>
+                                <div id="certo"><?=$sucesso?></div>
+                        <?php } ?>  
 
-                                 <?php } ?>  
             </div>
         </div>
     </body>

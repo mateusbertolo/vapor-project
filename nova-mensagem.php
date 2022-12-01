@@ -12,7 +12,7 @@ $query_inserir_mensagem = "INSERT INTO mensagens  (nome, email, assunto ,mensage
 $query_inserir_arquivadas = "INSERT INTO arquivadas (nome, email, assunto, mensagem) VALUES ('{$nome}','{$email}','{$assunto}','{$mensagem}')";
 mysqli_query($conn, $query_inserir_mensagem);
 mysqli_query($conn, $query_inserir_arquivadas);
-header('location: /vapor-php/suporte.php?certo=Mensagem Enviada!!');
+header('location: suporte.php?certo=Mensagem Enviada!!');
 
 
 

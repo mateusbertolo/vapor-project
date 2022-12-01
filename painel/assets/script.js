@@ -2,10 +2,17 @@
 function removeErrorMensage() {
     let errorMensage = document.getElementById("error-message-index")
     if(errorMensage != null){
-        location
         errorMensage.remove()
     }
 }
+
+function removeCorrectMensage() {
+    let correctMensage = document.getElementById("certo")
+    if(correctMensage != null){
+        correctMensage.remove()
+    }
+}
+
 //mensagens de erro
 
 
