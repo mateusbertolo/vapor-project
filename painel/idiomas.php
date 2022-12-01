@@ -35,7 +35,7 @@
                 <tr>
                     <td><?php echo $linhasidioma['nome']; ?></td>  
                     <td class="center"><a href="editar-idioma.php?id=<?=$linhasidioma['id']?>"> Editar</a></td>
-                    <td class="center"><a href="excluir-idioma.php?id=<?=$linhasidioma['id']?>"> Excluir</a></td>
+                    <td class="center"><a onclick="excluiridioma(<?=$linhasidioma['id']?>)" href="#"> Excluir</a></td>
                 </tr> 
                 <?php }  ?>
             </table>   

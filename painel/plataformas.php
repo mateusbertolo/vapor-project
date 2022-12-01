@@ -29,7 +29,7 @@
                 <tr>
                     <td><?php echo $linhasplataforma['nome']; ?></td>  
                     <td class="center"><a href="editar-plataforma.php?id=<?=$linhasplataforma['id']?>"> Editar</a></td>
-                    <td class="center"><a href="excluir-plataforma.php?id=<?=$linhasplataforma['id']?>"> Excluir</a></td>
+                    <td class="center"><a onclick="excluirplataforma(<?=$linhasplataforma['id']?>)" href="#"> Excluir</a></td>
                 </tr> 
                 <?php }  ?>
             </table>   

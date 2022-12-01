@@ -13,6 +13,7 @@ $error_mensage = $_GET['error'] ?? null;
     <link rel="stylesheet" href="./assets/global.css">
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="./assets/styles.css">
+    <script src="./assets/script.js"></script>
     <title>Vapor - Painel</title>
 </head>
 <body>  
@@ -23,7 +24,7 @@ $error_mensage = $_GET['error'] ?? null;
                 <div id="texto.logo"></div>
                 <div id="arealogin2">
                     <div class="labellogin">
-                    <input placeholder="Insira o E-mail" type="text" name="email" id="email"></div> <br>
+                    <input onclick="removeErrorMensage()" placeholder="Insira o E-mail" type="text" name="email" id="email"></div> <br>
 
                     <div class="labelsenha">
                     <input placeholder="Insira a Senha" type="password"  name="senha" id="senha"></div> <br>
@@ -31,11 +32,11 @@ $error_mensage = $_GET['error'] ?? null;
                     <button class="button-login">Fazer Login</button>
                 </div> 
                  <?php if($error_mensage != null) { ?>
-                <div class="error-message"><?=$error_mensage?></div>
+                <div id="error-message-index" class="error-message"><?=$error_mensage?></div>
                 <?php } ?>
         </div>
-           
            </form>
+       
     </div>
 </body>
 </html>

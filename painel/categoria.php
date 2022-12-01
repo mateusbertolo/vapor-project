@@ -28,7 +28,7 @@
                 <tr>
                     <td><?php echo $linhascategoria['nome']; ?></td>  
                     <td class="center"><a href="editar-categoria.php?id=<?=$linhascategoria['id']?>"> Editar</a></td>
-                    <td class="center"><a href="excluir-categoria.php?id=<?=$linhascategoria['id']?>"> Excluir</a></td>
+                    <td class="center"><a onclick="excluircategoria(<?=$linhascategoria['id']?>)" href="#"> Excluir</a></td>
                 </tr> 
                 <?php }  ?>
             </table>   
