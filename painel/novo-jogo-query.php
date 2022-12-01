@@ -12,35 +12,29 @@ $desenvolvedora = $_POST['desenvolvedora'] ?? null;
 $categoria = $_POST['categoria'] ?? null;
 $descricao = $_POST['descricao'] ?? null;
 
-if($video_url == "" || $video_url == null) {
+$query_nome_jogo = "SELECT * FROM jogo = {$name}";
+$jogonome = mysqli_query(mysqli_fetch_array($conn, $query_nome_jogo));
 
-    $query_delete_video_url = "UPDATE jogo SET video_url = null WHERE id = {$id_game}";
-    mysqli_query($conn, $query_delete_video_url);
+if($jogonome->num_rows != null){
+    header("location: editar-jogo.php?id={$id_game}&error=Jogo atualizado com sucesso!");
+}else{
+    if($video_url == "" || $video_url == null) {
 
-    $query_atualizar_jogo_sem_video = "UPDATE jogo SET nome = '{$name}', valor = {$valor}, descricao = '{$descricao}', imagem_url = '{$image_url}', data_lancamento = '{$data_lancamento}', desenvolvedora = '{$desenvolvedora}', id_categoria = {$categoria} WHERE id = {$id_game}";
+        $query_delete_video_url = "UPDATE jogo SET video_url = null WHERE id = {$id_game}";
+        mysqli_query($conn, $query_delete_video_url);
 
-    mysqli_query($conn, $query_atualizar_jogo_sem_video);
+        $query_atualizar_jogo_sem_video = "UPDATE jogo SET nome = '{$name}', valor = {$valor}, descricao = '{$descricao}', imagem_url = '{$image_url}', data_lancamento = '{$data_lancamento}', desenvolvedora = '{$desenvolvedora}', id_categoria = {$categoria} WHERE id = {$id_game}";
 
-} else {
-    
-    $query_atualizar_jogo_com_video = "UPDATE jogo SET nome = '{$name}', valor = {$valor}, descricao = '{$descricao}', imagem_url = '{$image_url}', video_url = '{$video_url}', data_lancamento = '{$data_lancamento}', desenvolvedora = '{$desenvolvedora}', id_categoria = {$categoria} WHERE id = {$id_game}";
+        mysqli_query($conn, $query_atualizar_jogo_sem_video);
 
-    mysqli_query($conn, $query_atualizar_jogo_com_video);
+    } else {
+        
+        $query_atualizar_jogo_com_video = "UPDATE jogo SET nome = '{$name}', valor = {$valor}, descricao = '{$descricao}', imagem_url = '{$image_url}', video_url = '{$video_url}', data_lancamento = '{$data_lancamento}', desenvolvedora = '{$desenvolvedora}', id_categoria = {$categoria} WHERE id = {$id_game}";
 
+        mysqli_query($conn, $query_atualizar_jogo_com_video);
+
+    }
 }
 
 header("location: editar-jogo.php?id={$id_game}&message=Jogo atualizado com sucesso!");
 
-
-if($jogo->num_rows == null) {
-    if ($video_url == "") {
-        mysqli_query($conn, $query_novo_jogo_with_video);
-        header('location: jogosdash.php');
-    } else {
-        mysqli_query($conn, $query_novo_jogo_wihout_video);
-        header('location: jogosdash.php');
-    }
-}
-else{
-    header('location: novo-jogo.php?error=Este jogo já está cadastrado!!');
-}

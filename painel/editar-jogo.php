@@ -16,7 +16,7 @@
 
      ?>
     <div id="contentnovoidioma">
-    <form class="formularios" action="novo-jogo-query.php" method="post">
+    <form onclick=removeErrorMensage_editarjogo() class="formularios" action="novo-jogo-query.php" method="post">
         <input type="hidden" name="id_jogo" value="<?=$id_jogo?>">
     
         <div class="content">
@@ -67,12 +67,12 @@
                     </div>
                 </div>
 
-                    <?php if ($errormensage != null) { ?>
-                        <div> class="error-message"><?= $error ?></div>
+                    <?php if ($error != null) { ?>
+                        <div id="error-message-editar-jogo" class="error-message"><?= $error ?></div>
                     <?php } ?>
 
                     <?php if ($message != null) { ?>
-                        <div class="certo"><?= $message ?></div>
+                        <div id="certo-message-editar-jogo" class="certo"><?= $message ?></div>
                     <?php } ?>
 
                     <button class="button-salvar"> 

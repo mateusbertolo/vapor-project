@@ -26,9 +26,21 @@ function removeErrorMensage_plataforma() {
         errorMensage.remove()
     }
 }
+function removeErrorMensage_editarjogo() {
+    let errorMensage = document.getElementById("error-message-editar-jogo")
+    if(errorMensage != null){
+        errorMensage.remove()
+    }
+}
 
 function removeCorrectMensage() {
     let correctMensage = document.getElementById("certo")
+    if(correctMensage != null){
+        correctMensage.remove()
+    }
+}
+function removeCorrectMensage_editarjogo() {
+    let correctMensage = document.getElementById("certo-message-editar-jogo")
     if(correctMensage != null){
         correctMensage.remove()
     }
