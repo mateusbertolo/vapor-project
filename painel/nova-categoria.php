@@ -13,13 +13,13 @@
         <div id="contentnovoidioma">
                     <label class="novoidioma">Categoria</label>
                     <div class="labelnovoidioma">
-                    <input placeholder="Insira a nova Categoria" type="text" name="categoria" id="novoidioma"></div> <br>
+                    <input onclick="removeErrorMensage_cat()" placeholder="Insira a nova Categoria" type="text" name="categoria" id="novoidioma"></div> <br>
    
-                    <button class="button-salvar"> 
+                    <button  class="button-salvar"> 
                      salvar 
                     </button>
                         <?php if($error_mensage != null) { ?>
-                            <div class="error-message"><?=$error_mensage?></div>
+                            <div id="error-message-nova-categoria" class="error-message"><?=$error_mensage?></div>
 
                         <?php } ?>
 

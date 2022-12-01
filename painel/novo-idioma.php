@@ -13,13 +13,13 @@
         <div id="contentnovoidioma">
                     <label class="novoidioma">Idioma</label>
                     <div class="labelnovoidioma">
-                    <input placeholder="Insira o Novo idioma" type="text" name="idiomas" id="novoidioma"></div> <br>
+                    <input onclick="removeErrorMensage_idioma()" placeholder="Insira o Novo idioma" type="text" name="idiomas" id="novoidioma"></div> <br>
    
                     <button class="button-salvar"> 
                      salvar 
                     </button>
                         <?php if($error_mensage != null) { ?>
-                            <div class="error-message"><?=$error_mensage?></div>
+                            <div id="error-message-index-idioma" class="error-message"><?=$error_mensage?></div>
 
                         <?php } ?>
 

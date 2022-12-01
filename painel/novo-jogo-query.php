@@ -30,3 +30,17 @@ if($video_url == "" || $video_url == null) {
 }
 
 header("location: editar-jogo.php?id={$id_game}&message=Jogo atualizado com sucesso!");
+
+
+if($jogo->num_rows == null) {
+    if ($video_url == "") {
+        mysqli_query($conn, $query_novo_jogo_with_video);
+        header('location: jogosdash.php');
+    } else {
+        mysqli_query($conn, $query_novo_jogo_wihout_video);
+        header('location: jogosdash.php');
+    }
+}
+else{
+    header('location: novo-jogo.php?error=Este jogo já está cadastrado!!');
+}

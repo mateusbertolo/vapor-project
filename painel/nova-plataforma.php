@@ -13,13 +13,13 @@
         <div id="contentnovoidioma">
                     <label class="novoidioma">Plataforma</label>
                     <div class="labelnovoidioma">
-                    <input placeholder="Insira a nova Plataforma" type="text" name="plataforma" id="novoidioma"></div> <br>
+                    <input onclick=removeErrorMensage_plataforma() placeholder="Insira a nova Plataforma" type="text" name="plataforma" id="novoidioma"></div> <br>
    
                     <button class="button-salvar"> 
                      salvar 
                     </button>
                         <?php if($error_mensage != null) { ?>
-                            <div class="error-message"><?=$error_mensage?></div>
+                            <div id="error-message-index-plataforma" class="error-message"><?=$error_mensage?></div>
 
                         <?php } ?>
 

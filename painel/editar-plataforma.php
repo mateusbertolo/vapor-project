@@ -13,7 +13,7 @@
     <form action="atualizar-plataforma.php" method="post">
         <div class="row">
             <div class="input-container quarter">
-                <label for="idiom">Idioma</label>
+                <label for="idiom">Plataforma</label>
                 <input value="<?=$plataforma['nome']?>" name="plataforma" id="idiom" class="row-input" type="text">
                 <input value="<?=$id_plataforma?>" name="id" type="hidden">
             </div>

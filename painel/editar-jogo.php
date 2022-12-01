@@ -67,12 +67,12 @@
                     </div>
                 </div>
 
-                    <?php if ($error != null) { ?>
-                        <div> class="row error-message"><?= $error ?></div>
+                    <?php if ($errormensage != null) { ?>
+                        <div> class="error-message"><?= $error ?></div>
                     <?php } ?>
 
                     <?php if ($message != null) { ?>
-                        <div class="row success-message"><?= $message ?></div>
+                        <div class="certo"><?= $message ?></div>
                     <?php } ?>
 
                     <button class="button-salvar"> 

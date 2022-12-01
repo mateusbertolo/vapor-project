@@ -6,6 +6,27 @@ function removeErrorMensage() {
     }
 }
 
+function removeErrorMensage_cat() {
+    let errorMensage = document.getElementById("error-message-nova-categoria")
+    if(errorMensage != null){
+        errorMensage.remove()
+    }
+}
+
+function removeErrorMensage_idioma() {
+    let errorMensage = document.getElementById("error-message-index-idioma")
+    if(errorMensage != null){
+        errorMensage.remove()
+    }
+}
+
+function removeErrorMensage_plataforma() {
+    let errorMensage = document.getElementById("error-message-index-plataforma")
+    if(errorMensage != null){
+        errorMensage.remove()
+    }
+}
+
 function removeCorrectMensage() {
     let correctMensage = document.getElementById("certo")
     if(correctMensage != null){
