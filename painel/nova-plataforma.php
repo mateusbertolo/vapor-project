@@ -13,7 +13,7 @@
         <div id="contentnovoidioma">
                     <label class="novoidioma">Plataforma</label>
                     <div class="labelnovoidioma">
-                    <input onclick=removeErrorMensage_plataforma() placeholder="Insira a nova Plataforma" type="text" name="plataforma" id="novoidioma"></div> <br>
+                    <input onclick="removeElementPorid('error-message-index-plataforma')" placeholder="Insira a nova Plataforma" type="text" name="plataforma" id="novoidioma"></div> <br>
    
                     <button class="button-salvar"> 
                      salvar 

@@ -16,7 +16,7 @@
 
      ?>
     <div id="contentnovoidioma">
-    <form onclick=removeErrorMensage_editarjogo() class="formularios" action="novo-jogo-query.php" method="post">
+    <form onclick="removeElementPorid('error-message-editar-jogo')" class="formularios" action="novo-jogo-query.php" method="post">
         <input type="hidden" name="id_jogo" value="<?=$id_jogo?>">
     
         <div class="content">

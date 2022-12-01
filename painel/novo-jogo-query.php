@@ -13,7 +13,7 @@ $categoria = $_POST['categoria'] ?? null;
 $descricao = $_POST['descricao'] ?? null;
 
 $query_nome_jogo = "SELECT * FROM jogo = {$name}";
-$jogonome = mysqli_query(mysqli_fetch_array($conn, $query_nome_jogo));
+$jogonome = mysqli_query($conn, $query_nome_jogo);
 
 if($jogonome->num_rows != null){
     header("location: editar-jogo.php?id={$id_game}&error=Jogo atualizado com sucesso!");

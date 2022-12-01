@@ -13,7 +13,7 @@
         <div id="contentnovoidioma">
                     <label class="novoidioma">Categoria</label>
                     <div class="labelnovoidioma">
-                    <input onclick="removeErrorMensage_cat()" placeholder="Insira a nova Categoria" type="text" name="categoria" id="novoidioma"></div> <br>
+                    <input onclick="removeElementPorid('error-message-nova-categoria')" placeholder="Insira a nova Categoria" type="text" name="categoria" id="novoidioma"></div> <br>
    
                     <button  class="button-salvar"> 
                      salvar 

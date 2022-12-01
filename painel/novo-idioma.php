@@ -13,7 +13,7 @@
         <div id="contentnovoidioma">
                     <label class="novoidioma">Idioma</label>
                     <div class="labelnovoidioma">
-                    <input onclick="removeErrorMensage_idioma()" placeholder="Insira o Novo idioma" type="text" name="idiomas" id="novoidioma"></div> <br>
+                    <input onclick="removeElementPorid('error-message-index-idioma')" placeholder="Insira o Novo idioma" type="text" name="idiomas" id="novoidioma"></div> <br>
    
                     <button class="button-salvar"> 
                      salvar 

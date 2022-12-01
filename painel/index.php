@@ -24,7 +24,7 @@ $error_mensage = $_GET['error'] ?? null;
                 <div id="texto.logo"></div>
                 <div id="arealogin2">
                     <div class="labellogin">
-                    <input onclick="removeErrorMensage()" placeholder="Insira o E-mail" type="text" name="email" id="email"></div> <br>
+                    <input onclick="removeElementPorid('error-message-index')" placeholder="Insira o E-mail" type="text" name="email" id="email"></div> <br>
 
                     <div class="labelsenha">
                     <input placeholder="Insira a Senha" type="password"  name="senha" id="senha"></div> <br>
