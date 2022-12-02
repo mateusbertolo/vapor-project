@@ -99,13 +99,15 @@ function excluirplataforma(linhasplataforma){
 
 // DATA JAVA 
 
+// dia = (dia > 10) ? "0" + dia : dia SHORT IF para pequenos testes
+
 function obterHoraAtual(){
     const data = new Date()
     const hora = ("0" + data.getHours()).slice(-2)
     const minutos = ("0" + data.getMinutes()).slice(-2)
     const segundos = ("0" + data.getSeconds()).slice(-2)
-    const dia = ("0" + data.getDay()).slice(-2)
-    const mes = ("0" + data.getMonth()).slice(-2)
+    const dia = ("0" + data.getDate()).slice(-2)
+    const mes = Number(("0" + data.getMonth()).slice(-2))+1 //number força a reconhecer como um numero para não dar pau com o +1
     const ano = data.getFullYear()
 
     let dataAtual =  dia + "/" + mes + "/" + ano + "-" + hora + ":" + minutos + ":" + segundos 
@@ -114,6 +116,11 @@ function obterHoraAtual(){
 
 
 }
-    let dataEHora = obterHoraAtual()
+function updateClock() {
+    const clock = document.getElementById('relogio')
+    clock.innerHTML = obterHoraAtual()
 
-    console.log(dataEHora)
+    setInterval(function () {
+        clock.innerHTML = obterHoraAtual()
+    }, 1000)
+}
