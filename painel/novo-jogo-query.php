@@ -16,8 +16,8 @@ $query_nome_jogo = "SELECT * FROM jogo = {$name}";
 $jogonome = mysqli_query($conn, $query_nome_jogo);
 
 if($jogonome->num_rows != null){
-    header("location: editar-jogo.php?id={$id_game}&error=Jogo atualizado com sucesso!");
-}else{
+    header("location: editar-jogo.php?id={$id_game}&error=Jogo já cadastrado");
+
     if($video_url == "" || $video_url == null) {
 
         $query_delete_video_url = "UPDATE jogo SET video_url = null WHERE id = {$id_game}";

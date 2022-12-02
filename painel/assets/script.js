@@ -96,3 +96,24 @@ function excluirplataforma(linhasplataforma){
         window.open("excluir-plataforma.php?id=" + linhasplataforma, "_SELF")
     }
 }
+
+// DATA JAVA 
+
+function obterHoraAtual(){
+    const data = new Date()
+    const hora = ("0" + data.getHours()).slice(-2)
+    const minutos = ("0" + data.getMinutes()).slice(-2)
+    const segundos = ("0" + data.getSeconds()).slice(-2)
+    const dia = ("0" + data.getDay()).slice(-2)
+    const mes = ("0" + data.getMonth()).slice(-2)
+    const ano = data.getFullYear()
+
+    let dataAtual =  dia + "/" + mes + "/" + ano + "-" + hora + ":" + minutos + ":" + segundos 
+
+    return dataAtual
+
+
+}
+    let dataEHora = obterHoraAtual()
+
+    console.log(dataEHora)

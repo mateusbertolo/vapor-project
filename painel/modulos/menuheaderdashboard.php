@@ -14,6 +14,7 @@ $adiministrador = $_SESSION['adiministrador'];
     <script src="./assets/script.js"></script>
     <title>Vapor - dasboard</title>
     <div id="header-container">
+        <script>document.write("Hoje é "  + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() ) </script>
         <div>Olá, <?php echo"{$adiministrador['nome']}"?></div>
         <div id="botaosair-header"><a href="./logout.php"><img src="public/images/exit.png" alt="imagem sair"> </a> </div> 
         <div id="botaomensagens-header"><a href="./mensagem.php"><img src="public/images/aplicativo-de-caixa-de-entrada-de-correio.png" alt="mensagem"> </a> </div> 
