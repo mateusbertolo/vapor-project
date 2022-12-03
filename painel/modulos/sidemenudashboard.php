@@ -6,7 +6,8 @@
                             <div class="side-imagem">
                             <img src="../public/images/logo.png" alt="vapor">
                             </div>
-                            <div class="page-logo-text">VAPOR - DASHBOARD</div>
+                            <div id="page-logo-text">VAPOR - DASHBOARD</div>
+                            
                         </a>
                     </div>
                     <div class="multifuncoes_sidemenu">

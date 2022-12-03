@@ -193,7 +193,6 @@
     padding-left: 5px;
 }
 .side-imagem img{
-    color:#FFF;
     justify-content: center;
     align-items: center;
 }
@@ -219,13 +218,11 @@
     animation: moveFromLeft 300ms ease-in-out;
 }
 .multifuncoes_sidemenu li a{
-    color: rgba(255,255,255,0.9);
     font-size: 0.75em;
     padding: 1.05em	1em;
     position: relative;
     display:block;
     align-items: center;
-    color: #fff;
     font-weight: 600;
     height: 100px;
     font-size: 20px;
