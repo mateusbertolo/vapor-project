@@ -136,4 +136,13 @@ function random_bg_color() {
  console.log(bgColor);
   
     document.getElementById('page-logo-text').style.color = bgColor;
+    document.getElementById('colorjs').style.color = bgColor;
+    document.getElementById('relogio').style.color = bgColor;
+    }
+
+    function updateColor() {
+    
+        setInterval(function () {
+            var color = random_bg_color()
+        }, 1000)
     }

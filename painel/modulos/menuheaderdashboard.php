@@ -22,4 +22,8 @@ $adiministrador = $_SESSION['adiministrador'];
 
     </div>
 </head>
-    <script> updateClock()</script>
+    <script> 
+        updateClock()
+
+        updateColor()
+    </script>
