@@ -129,11 +129,11 @@ function updateClock() {
 
 
     function random_bg_color() {
-        var r = Math.floor(Math.random() * 256)
-        var g = Math.floor(Math.random() * 256)
-        var b = Math.floor(Math.random() * 256)
+        const r = Math.floor(Math.random() * 256)
+        const g = Math.floor(Math.random() * 256)
+        const b = Math.floor(Math.random() * 256)
         // var a = Math.random()
-        var bgColor = "rgb(" + r + "," + g + "," + b + ")"
+        const bgColor = "rgb(" + r + "," + g + "," + b + ")"
 
     
         document.getElementById('page-logo-text').style.color = bgColor
