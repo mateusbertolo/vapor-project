@@ -128,21 +128,18 @@ function updateClock() {
 //função mudar cor
 
 
-function random_bg_color() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
- console.log(bgColor);
-  
-    document.getElementById('page-logo-text').style.color = bgColor;
-    document.getElementById('colorjs').style.color = bgColor;
-    document.getElementById('relogio').style.color = bgColor;
+    function random_bg_color() {
+        var x = Math.floor(Math.random() * 256);
+        var y = Math.floor(Math.random() * 256);
+        var z = Math.floor(Math.random() * 256);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+
+    
+        document.getElementById('page-logo-text').style.color = bgColor;
+        document.getElementById('colorjs').style.color = bgColor;
+        document.getElementById('relogio').style.color = bgColor;
     }
 
     function updateColor() {
-    
-        setInterval(function () {
-            var color = random_bg_color()
-        }, 1000)
+        setInterval(random_bg_color, 1000)
     }
