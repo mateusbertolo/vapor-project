@@ -15,7 +15,7 @@
         <div class="content">
                     <label for="nome" class="novoidioma">Nome*</label>
                     <div class="labelnovoidioma">
-                    <input placeholder="Insira o Novo Nome" type="text" name="nome" id="novonome"></div> <br>
+                    <input placeholder="Insira o Novo Nome" type="text" name="nome" id="novonome" onkeyup="caps_lock(this)"></div> <br>
 
                     <label for="price" class="novoidioma">Valor*</label>
                     <div class="labelnovoidioma">

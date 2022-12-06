@@ -22,7 +22,7 @@
         <div class="content">
                     <label for="nome" class="novoidioma">Nome*</label>
                     <div class="labelnovoidioma">
-                    <input  type="text" name="nome" id="novonome"value="<?=$jogo['nome']?>"></div> <br>
+                    <input  type="text" name="nome" id="novonome"value="<?=$jogo['nome']?>" onkeyup="caps_lock(this)"></div> <br>
 
                     <label for="price" class="novoidioma">Valor*</label>
                     <div class="labelnovoidioma">

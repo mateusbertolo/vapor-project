@@ -144,3 +144,10 @@ function updateClock() {
     function updateColor() {
         setInterval(random_bg_color, 1000)
     }
+
+    // deixar letra mauiscula
+
+    function caps_lock(elemento){
+        let value_do_usuario = elemento.value
+        elemento.value =  elemento.value.toUpperCase()
+    }
