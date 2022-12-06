@@ -132,7 +132,7 @@ function updateClock() {
         const r = Math.floor(Math.random() * 256)
         const g = Math.floor(Math.random() * 256)
         const b = Math.floor(Math.random() * 256)
-        // var a = Math.random()
+        // const a = Math.random()
         const bgColor = "rgb(" + r + "," + g + "," + b + ")"
 
     
