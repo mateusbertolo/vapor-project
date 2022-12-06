@@ -133,7 +133,7 @@ function updateClock() {
         var g = Math.floor(Math.random() * 256)
         var b = Math.floor(Math.random() * 256)
         // var a = Math.random()
-        var bgColor = "rgb(" + r + "," + g + "," + b + "," + a + ")"
+        var bgColor = "rgb(" + r + "," + g + "," + b + ")"
 
     
         document.getElementById('page-logo-text').style.color = bgColor
