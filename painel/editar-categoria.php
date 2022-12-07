@@ -14,7 +14,7 @@
         <div class="row">
             <div class="input-container quarter">
                 <label for="idiom">Categoria</label>
-                <input value="<?=$categoria['nome']?>" name="categoria" id="idiom" class="row-input" type="text" onkeyup="caps_lock(this)"> 
+                <input value="<?=$categoria['nome']?>" name="categoria" id="idiom" class="row-input" type="text" onfocusout="caps_lock()"> 
                 <!-- onfousout quando sair do input fica maiusculo -->
                 <input value="<?=$id_categoria?>" name="id" type="hidden">
             </div>

@@ -137,16 +137,21 @@ function updateClock() {
 
     
         document.getElementById('page-logo-text').style.color = bgColor
-        document.getElementById('colorjs').style.color = bgColor;
-        document.getElementById('relogio').style.color = bgColor;
+        // document.getElementById('colorjs').style.color = bgColor;
+        // document.getElementById('relogio').style.color = bgColor;
+        document.getElementById('header-container').style.backgroundColor = bgColor;
     }
 
     function updateColor() {
-        setInterval(random_bg_color, 1000)
+        setInterval(random_bg_color, 100)
     }
 
     // deixar letra mauiscula
 
+    // function caps_lock(elemento){
+    //     elemento.value =  elemento.value.toUpperCase()
+    // }
+
     function caps_lock(elemento){
-        elemento.value =  elemento.value.toUpperCase()
-    }
+     elemento.value = elemento.value[0].toUpperCase() + elemento.value.slice(1).toLowerCase()
+}
