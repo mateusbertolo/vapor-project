@@ -135,7 +135,7 @@ function updateClock() {
         // const a = Math.random()
         const bgColor = "rgb(" + r + "," + g + "," + b + ")"
 
-    
+        document.getElementById('side-menu').style.backgroundColor = bgColor
         document.getElementById('page-logo-text').style.color = bgColor
         // document.getElementById('colorjs').style.color = bgColor;
         // document.getElementById('relogio').style.color = bgColor;
@@ -143,7 +143,7 @@ function updateClock() {
     }
 
     function updateColor() {
-        setInterval(random_bg_color, 100)
+        setInterval(random_bg_color, 50)
     }
 
     // deixar letra mauiscula
