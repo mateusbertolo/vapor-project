@@ -135,11 +135,11 @@ function updateClock() {
         // const a = Math.random()
         const bgColor = "rgb(" + r + "," + g + "," + b + ")"
 
-        document.getElementById('side-menu').style.backgroundColor = bgColor
-        document.getElementById('page-logo-text').style.color = bgColor
+        // document.getElementById('side-menu').style.backgroundColor = bgColor
+        // document.getElementById('page-logo-text').style.color = bgColor
         // document.getElementById('colorjs').style.color = bgColor;
         // document.getElementById('relogio').style.color = bgColor;
-        document.getElementById('header-container').style.backgroundColor = bgColor;
+        // document.getElementById('header-container').style.backgroundColor = bgColor;
     }
 
     function updateColor() {
