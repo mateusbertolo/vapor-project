@@ -4,9 +4,9 @@
                     <div class="page-logo">
                         <a href="../dashboard.php">
                             <div class="side-imagem">
-                            <img src="../public/images/logo.png" alt="vapor">
+                            <img src="public/images/logo-com-texto.png" alt="vapor">
                             </div>
-                            <div id="page-logo-text">VAPOR - DASHBOARD</div>
+                            <div id="page-logo-text"></div>
                             
                         </a>
                     </div>
@@ -14,7 +14,7 @@
                                 <ul>
                                     <li>
                                         <a href="jogosdash.php" title="multifuncao_jogo_home" >
-                                            <div class="img-sidemenu"><img src="public/images/375.png" alt=""></div>
+                                            <div class="img-sidemenu"><img src="public/images/botao-play.png" alt=""></div>
                                             <div class="linktexto_multifun"><span >Jogos</span></div>
                                         </a>
                                     </li>

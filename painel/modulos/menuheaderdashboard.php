@@ -16,14 +16,13 @@ $adiministrador = $_SESSION['adiministrador'];
     <div id="header-container">
         <span id="relogio"></span> <span>--</span>
         <div id="colorjs">Olá,<?php echo"{$adiministrador['nome']}"?></div> 
-        <div id="botaosair-header"><a href="./logout.php"><img src="public/images/exit.png" alt="imagem sair"> </a> </div> 
-        <div id="botaomensagens-header"><a href="./mensagem.php"><img src="public/images/aplicativo-de-caixa-de-entrada-de-correio.png" alt="mensagem"> </a> </div> </span>
+        <div id="botaosair-header"><a href="./logout.php"><img src="public/images/exit (1).png" alt="imagem sair"> </a> </div> 
+        <div id="botaomensagens-header"><a href="./mensagem.php"><img src="public/images/correspondencia.png" alt="mensagem"> </a> </div> </span>
        
 
     </div>
 </head>
     <script> 
         updateClock()
-
         updateColor()
     </script>
